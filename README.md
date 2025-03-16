@@ -50,7 +50,7 @@ This section walks you through creating a Laravel web scraping API using the [Qu
 
 Here’s what the target site looks like:
 
-![Quotes to scrape page](https://brightdata.com/wp-content/uploads/2022/11/Quotes-to-Scrape-page-gif.gif)
+![Quotes to scrape page](https://github.com/luminati-io/laravel-web-scraping/blob/main/images/68747470733a2f2f627269676874646174612e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032322f31312f51756f7465732d746f2d5363726170652d706167652d6769662e676966.gif)
 
 **Step 1: Set up a Laravel project**
 
@@ -64,7 +64,7 @@ The `lavaral-scraper` folder will now contain a blank Laravel project. Load it i
 
 This is the file structure of your current backend:
 
-![file structure in the backend](https://brightdata.com/wp-content/uploads/2024/08/file-structure-in-the-backend.png)
+![file structure in the backend](https://github.com/luminati-io/laravel-web-scraping/blob/main/images/687474~1.PNG)
 
 **Step 2: Initialize Your Scraping API**
 
@@ -148,7 +148,7 @@ You should get the following response:
 
 Before installing any packages, determine which Laravel web scraping libraries suit your needs. Open the target site, inspect it using Developer Tools, and check the **Network → Fetch/XHR** section:
 
-![Accessing the 'Fetch XHR' section](https://brightdata.com/wp-content/uploads/2024/08/accessing-the-Fetch-XHR-section.png)
+![Accessing the 'Fetch XHR' section](https://github.com/luminati-io/laravel-web-scraping/blob/main/images/687474~2.PNG)
 
 Since the site does not make [AJAX requests](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX), it is a static page with data embedded in the HTML. A [headless browser](https://brightdata.com/blog/web-data/best-headless-browsers) is unnecessary, as it would add overhead.
 
@@ -246,7 +246,7 @@ To define the extraction logic, inspect the HTML structure of the target page.
 2. Right-click a quote element and select **Inspect** in DevTools.  
 3. Expand the HTML and examine its structure:
 
-![Inspecting the quote elements](https://brightdata.com/wp-content/uploads/2024/08/Inspecting-the-quote-elements-1024x814.png)
+![Inspecting the quote elements](https://github.com/luminati-io/laravel-web-scraping/blob/main/images/687474~3.PNG)
 
 Each `.quote` element contains:  
 - A `.text` node for the quote text  
