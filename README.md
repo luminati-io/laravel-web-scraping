@@ -21,7 +21,7 @@ This guide explains how to perform web scraping using Laravel:
 
 [Laravel](https://laravel.com/) is a powerful PHP framework with an elegant syntax, making it ideal for building APIs for web scraping. It supports various scraping libraries, simplifying data extraction. 
 
-Laravel’s scalability, easy integration, and strong MVC architecture keep scraping logic well-organized, making it great for complex or large-scale projects. For more details, see our guide on [web scraping in PHP](/blog/how-tos/web-scraping-php).
+Laravel’s scalability, easy integration, and strong MVC architecture keep scraping logic well-organized, making it great for complex or large-scale projects. For more details, see our guide on [web scraping in PHP](https://brightdata.com/blog/how-tos/web-scraping-php).
 
 ## Best Laravel Web Scraping Libraries
 
@@ -29,7 +29,7 @@ Here are some top libraries for web scraping in Laravel:
 
 - [**BrowserKit**](https://github.com/symfony/browser-kit) – A Symfony component that simulates a web browser API for interacting with static HTML documents. It works with `DomCrawler` for efficient navigation and scraping.
 - [**HttpClient**](https://github.com/symfony/http-client) – A Symfony HTTP client that integrates seamlessly with `BrowserKit` for sending requests.
-- [**Guzzle**](https://github.com/guzzle/guzzle) – A powerful HTTP client for making web requests and handling responses. Useful for retrieving HTML documents. Learn [how to set up a proxy in Guzzle](/blog/how-tos/proxy-with-guzzle).
+- [**Guzzle**](https://github.com/guzzle/guzzle) – A powerful HTTP client for making web requests and handling responses. Useful for retrieving HTML documents. Learn [how to set up a proxy in Guzzle](https://brightdata.com/blog/how-tos/proxy-with-guzzle).
 - [**Panther**](https://github.com/symfony/panther) – A headless browser for scraping dynamic sites that require JavaScript rendering or interaction.
 ## Prerequisites
 
@@ -150,7 +150,7 @@ Before installing any packages, determine which Laravel web scraping libraries s
 
 ![Accessing the 'Fetch XHR' section](https://brightdata.com/wp-content/uploads/2024/08/accessing-the-Fetch-XHR-section.png)
 
-Since the site does not make [AJAX requests](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX), it is a static page with data embedded in the HTML. A [headless browser](/blog/web-data/best-headless-browsers) is unnecessary, as it would add overhead.
+Since the site does not make [AJAX requests](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX), it is a static page with data embedded in the HTML. A [headless browser](https://brightdata.com/blog/web-data/best-headless-browsers) is unnecessary, as it would add overhead.
 
 For efficient scraping, use Symfony’s [`BrowserKit`](https://symfony.com/doc/current/http_client.html) and [`HttpClient`](https://symfony.com/doc/current/http_client.html). Install them with:
 
